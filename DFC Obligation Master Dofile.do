@@ -22,14 +22,14 @@ global FXCurrency = "`6'"
 global Currency = "`7'"
 global LoanType = "`8'"
 
-if "$version"!="v1_2025_FinanceModel" { 
+if "$version"!="v1_2026_FinanceModel" { 
 	dis as error _newline "ATTENTION: The version of the Excel Model Template that you are using is not compatible with this version of the Stata program files." ///
 	_newline _column(12) "Please use latest model template and files. To exit STATA, type 'q'."
 	pause
 	exit, STATA
 	}
 
-global Dofile_Path  "$path1\DoFiles\v1_2025_FinanceModel"
+global Dofile_Path  "$path1\DoFiles\v1_2026_FinanceModel"
 global Output_Path  "$path1\Outputs\\${LoanType}"
 
 capture log close
